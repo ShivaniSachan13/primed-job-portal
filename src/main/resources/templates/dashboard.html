@@ -20,7 +20,7 @@
 <body>
 <header class="navbar navbar-expand-lg navbar-dark">
     <label class="mt-2 ms-5 font-weight-bold h5"
-    ><a th:href="@{/dashboard/}">developerjobs</a
+    ><a th:href="@{/dashboard/}">Primed</a
     ><span class="logo_com font-weight-bold h5" style="color: white">
           .com</span
     ></label
@@ -252,6 +252,10 @@
         </div>
         <div class="box mt-3">
             <label class="large-label px-3 mb-3" sec:authorize="hasAuthority('Job Seeker')">Search Results</label>
+            <div class="empty-state" sec:authorize="hasAuthority('Job Seeker')" th:if="${#lists.isEmpty(jobPost)}">
+                <h3>No jobs found</h3>
+                <p>Try a different job title, company, or location. If this is a new setup, post a job from a recruiter account first.</p>
+            </div>
             <th:block th:each="jobPost:${jobPost}">
                 <a
                         th:href="@{/job-details-apply/{id}(id=${jobPost.jobPostId})}"

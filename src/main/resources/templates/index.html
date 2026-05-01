@@ -2,55 +2,65 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Login Developer Jobs</title>
+    <title>Primed Job Portal</title>
     <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css} "/>
     <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/font-awesome.min.css}"/>
     <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/styles.css}"/>
     <meta charset="ISO-8859-1">
 </head>
-<body class="background">
-<nav class="main_div">
-    <div class="logo_left">
-        <label class="logo">
-            developerjobs
-        </label>
-        <label class="logo_com">
-            .com
-        </label>
-    </div>
+<body class="background landing-page">
+<nav class="main_div landing-nav">
+    <a class="brand" th:href="@{/}">
+        Primed<span>.com</span>
+    </a>
     <div class="logo_right">
-        <label class="Candidate_login_btn">
-            <a th:href="@{/login}">
-                Job Candidate Login
-            </a>
-            <a th:href="@{/register}">
-                /Register
-            </a>
-        </label>
-        <label class="Recruiter_login_btn">
-            <a th:href="@{/login}">
-                Recruiter Login
-            </a>
-            <a th:href="@{/register}">
-                /Register
-            </a>
-
-        </label>
+        <a class="nav-action secondary" th:href="@{/login}">
+            Candidate Login
+        </a>
+        <a class="nav-action secondary" th:href="@{/login}">
+            Recruiter Login
+        </a>
+        <a class="nav-action primary" th:href="@{/register}">
+            Register
+        </a>
     </div>
 </nav>
-<form th:action="@{/global-search/}">
-    <div class="searchBox">
+
+<main class="hero-section">
+    <section class="hero-copy">
+        <p class="hero-kicker">Job search, made focused</p>
+        <h1>Find the right job faster with Primed.</h1>
+        <p class="hero-subtitle">
+            Discover openings, filter by location, and connect with recruiters through one clean portal.
+        </p>
+    </section>
+
+    <form class="searchBox" th:action="@{/global-search/}">
         <div class="inner">
-
-            <input type="text" placeholder="Search for a job" name="job" th:value="${job}"/>
-            <input type="text" placeholder="Enter a location" name="location" th:value="${location}"/>
-            <button type="submit"><i class="fa fa-search"></i></button>
-
+            <input class="radius-left" type="text" placeholder="Search job title or skill" name="job" th:value="${job}"/>
+            <input type="text" placeholder="Enter location" name="location" th:value="${location}"/>
+            <button class="radius-right" type="submit" aria-label="Search jobs"><i class="fa fa-search"></i></button>
         </div>
-    </div>
-</form>
+    </form>
+
+    <section class="hero-highlights" aria-label="Portal highlights">
+        <div>
+            <strong>Recruiter</strong>
+            <span>Post and manage jobs</span>
+        </div>
+        <div>
+            <strong>Candidate</strong>
+            <span>Search and save jobs</span>
+        </div>
+        <div>
+            <strong>Secure</strong>
+            <span>Role-based access</span>
+        </div>
+    </section>
+</main>
+
 <footer>
-    <label class="copy-right">Copyright © developerjobs.com</label>
+    <label class="copy-right">Copyright (c) 2026 Primed Job Portal</label>
 </footer>
 </body>
 

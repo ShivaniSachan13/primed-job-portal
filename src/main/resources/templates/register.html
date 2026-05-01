@@ -31,7 +31,7 @@
         <div class="col-6 coffee_mug_background">
             <div class="logo_left mt-3 pt-4 ms-5 pl-5">
                 <h2 class="logo" style="color: white">
-                    developerjobs <span class="logo_com">.com</span>
+                    Primed <span class="logo_com">.com</span>
                 </h2>
             </div>
         </div>
@@ -87,6 +87,7 @@
                                                 class="form-control"
                                                 th:field="*{userTypeId}"
                                         >
+                                            <option value="">Select account type</option>
                                             <th:block th:each="userType :${getAllTypes}">
                                                 <option
                                                         th:text="${userType.userTypeName}"
