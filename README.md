@@ -95,7 +95,7 @@ We welcome contributions to make this project better! Here's how you can contrib
 
 ## Contact
 If you have any questions, suggestions, or feedback, feel free to reach out:  
-- **GitHub**: [@anjali13nair](https://github.com/anjali13nair)
-- **Email**: anjalinnair13@gmail.com
-- **LinkedIn**:[Anjali Nair](https://www.linkedin.com/in/anjalinnair13/)
+- **GitHub**: ShivaniSachan13(https://github.com/ShivaniSachan13)
+- **Email**: shivani13.sachan@gmail.com
+- **LinkedIn**:(https://www.linkedin.com/in/shivani-sachan-3b72192a1/)
 
