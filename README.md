@@ -34,7 +34,7 @@ The project is developed using the following technologies and tools:
 ## How to Run the Application
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/anjali13nair/java-jobPortalWebApp.git
+   git clone https://github.com/shivanishachan13/primed-job-portal.git
    cd java-jobPortalWebApp
 2. **Configure the database**:
    - Update the `application.properties` file located in the `src/main/resources` directory with your MySQL credentials:
