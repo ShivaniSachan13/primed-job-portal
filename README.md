@@ -1,5 +1,7 @@
 # Job Portal Web Application
 
+🔗 **Live Demo**: [https://primed-job-portal.onrender.com](https://primed-job-portal.onrender.com)
+
 Welcome to the **Job Portal Web Application** repository! This project is a dynamic platform built using **Spring Boot 3**, **Spring MVC**, **Thymeleaf**, **Hibernate/JPA**, and **Spring Security**. It is designed to streamline the process of job recruitment and job searching, providing separate functionalities for **Recruiters** and **Job Candidates**.
 
 ---
